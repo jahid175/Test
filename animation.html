@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color:#111;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: deeppink;
+      position: relative;
+      animation: moveBox 0.005s infinite alternate ease-in-out;
+    }
+
+    @keyframes moveBox {
+      from {
+        left: 0;
+      }
+      to {
+        left: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+      <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
